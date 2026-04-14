@@ -1,9 +1,98 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2869
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# GLiNER2 for Performing Multiple NLP Tasks Efficiently
 
-\f0\fs24 \cf0 README\
-}
+## Team Members
+
+* Lok Prakash Pandey — [lok.pandey@torontomu.ca](mailto:lok.pandey@torontomu.ca)
+* Samuel Ukoha — [samuel.ukoha@torontomu.ca](mailto:samuel.ukoha@torontomu.ca)
+* Xinquan Yu — [xinquan.yu@torontomu.ca](mailto:xinquan.yu@torontomu.ca)
+
+---
+
+## Abstract
+
+The Natural Language Processing (NLP) tasks such as Named Entity Recognition (NER), Text Classification (TC), Structured Data Extraction (SDE), and Relation Extraction (RE) are normally done using separate task-based models. This causes an increase in cost and complexity of managing such a system. In this respect, this project introduces the **GLiNER2** (Generalist Model for Named Entity Recognition 2) framework that can perform the mentioned tasks using a single unified model. This project reproduces the results done by the authors of GLiNER2 and evaluates its practicality for NLP tasks in a CPU-based environment. Overall, the implementation results showed that GLiNER2 offers a real-world unified solution for building efficient, flexible, and cost-effective NLP systems.
+
+---
+
+## Project Overview
+
+This project focuses on reproducing the GLiNER2 model and evaluating its ability to perform multiple NLP tasks.
+
+### Key Objectives
+
+* Reproduce GLiNER2 model behavior
+* Perform multi-task NLP (NER, TC, SDE, RE)
+* Evaluate performance in a CPU-only environment
+
+---
+
+## Repository Structure
+
+```
+GLiNER2-Project/
+│
+├── README.md
+├── GLiNER2_Project.ipynb
+├── data/
+├── src/
+```
+
+---
+
+## Setup Instructions
+
+Run the following commands before executing the notebook:
+
+```python
+!pip install -q gliner2
+!apt-get -qq update
+!apt-get -qq install git-lfs
+!git lfs install
+```
+
+---
+
+## How to Run
+
+1. Open `GLiNER2_Project.ipynb` using Google Colab or Jupyter Notebook
+2. Run all cells sequentially
+3. Make sure that all required dependencies are installed before execution
+
+---
+
+## Dataset
+
+* The project's notebook uses publicly available datasets compatible with GLiNER2
+* Additional data (if required) can be downloaded within the notebook or from standard sources such as Hugging Face
+
+---
+
+## Results
+
+* Successfully reproduced core functionality of GLiNER2
+* Demonstrated multi-task capability within a single unified model
+* Achieved efficient execution in a CPU-based environment
+* Reduced dependency on multiple task-specific NLP models
+
+---
+
+## Limitations
+
+* Performance is dependent on the quality of schema definitions
+* Limited large-scale evaluation due to computational constraints
+
+---
+
+## Future Work
+
+* Evaluate model performance on larger and more diverse datasets
+* Compare against fine-tuned transformer-based baselines
+* Extend implementation to real-time and production-level NLP systems
+
+---
+
+## References
+
+[1] Urchade Zaratiana, Nadi Tomeh, Pierre Holat, Thierry Charnois, *GLiNER: Generalist Model for Named Entity Recognition using Bidirectional Transformer*, arXiv, 2023
+
+[2] Urchade Zaratiana, Gil Pasternak, Oliver Boyd, George Hurn-Maloney, Ash Lewis, *GLiNER2: An Efficient Multi-Task Information Extraction System with Schema-Driven Interface*, Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2025, pp. 130–140
