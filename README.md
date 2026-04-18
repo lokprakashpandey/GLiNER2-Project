@@ -103,8 +103,7 @@ Run the following commands before executing the notebook:
 | Demonstrated named entity recognition | Did not reproduce the full NER benchmark setting from the paper |
 | Demonstrated structured / JSON extraction | Did not systematically evaluate all structured extraction settings |
 | Used the official GLiNER2 API and notebook-based implementation | Did not re-implement the internal architecture details |
-| Showed how one model can support multiple tasks through schema design | Did not fully reproduce the paper as a research-level
-benchmark study |
+| Showed how one model can support multiple tasks through schema design | Did not fully reproduce the paper as a research-level benchmark study |
 
 ---
 
